@@ -14,21 +14,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z.ai Code Scaffold - AI-Powered Development",
-  description: "Modern Next.js scaffold optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui.",
-  keywords: ["Z.ai", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React"],
-  authors: [{ name: "Z.ai Team" }],
+  title: "Ade Ramdani Profiles",
+  description:
+    "Profil Ade Ramdani — IT Administrator yang mengelola infrastruktur IT dan berbagi tutorial, dokumentasi, serta proyek open source.",
+  keywords: [
+    "Ade Ramdani",
+    "IT Administrator",
+    "infrastruktur",
+    "tutorial",
+    "dokumentasi",
+    "portfolio",
+    "web development",
+  ],
+  authors: [{ name: "Ade Ramdani" }],
   openGraph: {
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
-    url: "https://chat.z.ai",
-    siteName: "Z.ai",
+    title: "Ade Ramdani Profiles",
+    description:
+      "Profil dan karya Ade Ramdani — proyek, tutorial, dan dokumentasi seputar infrastruktur dan web development.",
+    url: "https://aderamdani.web.id",
+    siteName: "Ade Ramdani",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
+    title: "Ade Ramdani Profiles",
+    description:
+      "Profil dan konten teknis dari Ade Ramdani — IT Administrator dan pembuat tutorial teknis.",
   },
 };
 

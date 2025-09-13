@@ -86,7 +86,7 @@ export default function Home() {
                     <Badge variant="secondary">Next.js</Badge>
                   </div>
                   <CardDescription>
-                    Portal utama (util.aderamdani.web.id) yang menggabungkan semua tools dan status page.
+                    Utilities Hub adalah kumpulan alat utilitas gratis berbasis web untuk teks, gambar, dokumen, dan file, tanpa perlu instalasi.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
@@ -98,7 +98,7 @@ export default function Home() {
                   </div>
                   <div className="flex gap-2">
                     <Button size="sm" variant="outline" asChild>
-                      <a href="https://github.com/aderamdani/utilities-hub" target="_blank" rel="noopener noreferrer">
+                      <a href="https://github.com/aderamdani/utilities" target="_blank" rel="noopener noreferrer">
                         <Github className="mr-2 h-4 w-4" />
                         Code
                       </a>
