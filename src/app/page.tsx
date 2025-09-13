@@ -82,11 +82,11 @@ export default function Home() {
               <Card className="flex flex-col">
                 <CardHeader>
                   <div className="flex items-center justify-between">
-                    <CardTitle>Utilities Hub (Landing)</CardTitle>
+                    <CardTitle>Utilities Hub</CardTitle>
                     <Badge variant="secondary">Next.js</Badge>
                   </div>
                   <CardDescription>
-                    Portal utama (utilitites.aderamdani.web.id) yang menggabungkan semua tools dan status page.
+                    Portal utama (util.aderamdani.web.id) yang menggabungkan semua tools dan status page.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
