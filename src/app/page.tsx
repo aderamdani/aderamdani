@@ -104,7 +104,7 @@ export default function Home() {
                       </a>
                     </Button>
                     <Button size="sm" variant="outline" asChild>
-                      <a href="https://utilitites.aderamdani.web.id" target="_blank" rel="noopener noreferrer">
+                      <a href="https://util.aderamdani.web.id" target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />
                         Live
                       </a>
