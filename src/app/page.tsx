@@ -78,53 +78,57 @@ export default function Home() {
             </div>
             
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {/* Project Card 1 */}
+              {/* Utilities Hub — Landing & Aggregator */}
               <Card className="flex flex-col">
                 <CardHeader>
                   <div className="flex items-center justify-between">
-                    <CardTitle>E-Commerce Platform</CardTitle>
+                    <CardTitle>Utilities Hub (Landing)</CardTitle>
                     <Badge variant="secondary">Next.js</Badge>
                   </div>
                   <CardDescription>
-                    Platform e-commerce modern dengan fitur payment gateway dan inventory management
+                    Portal utama (utilitites.aderamdani.web.id) yang menggabungkan semua tools dan status page.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge variant="outline">React</Badge>
+                    <Badge variant="outline">Next.js</Badge>
                     <Badge variant="outline">TypeScript</Badge>
-                    <Badge variant="outline">Tailwind CSS</Badge>
-                    <Badge variant="outline">Prisma</Badge>
+                    <Badge variant="outline">Vercel</Badge>
+                    <Badge variant="outline">Tailwind</Badge>
                   </div>
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline">
-                      <Github className="mr-2 h-4 w-4" />
-                      Code
+                    <Button size="sm" variant="outline" asChild>
+                      <a href="https://github.com/aderamdani/utilities-hub" target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-2 h-4 w-4" />
+                        Code
+                      </a>
                     </Button>
-                    <Button size="sm" variant="outline">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
+                    <Button size="sm" variant="outline" asChild>
+                      <a href="https://utilitites.aderamdani.web.id" target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Live
+                      </a>
                     </Button>
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Project Card 2 */}
+              {/* DNS & WHOIS Tool */}
               <Card className="flex flex-col">
                 <CardHeader>
                   <div className="flex items-center justify-between">
-                    <CardTitle>Task Management App</CardTitle>
-                    <Badge variant="secondary">React Native</Badge>
+                    <CardTitle>DNS Lookup & WHOIS</CardTitle>
+                    <Badge variant="secondary">Go / Node</Badge>
                   </div>
                   <CardDescription>
-                    Aplikasi manajemen tugas dengan real-time collaboration dan offline support
+                    Pencarian DNS, lookup record, dan WHOIS yang mendukung batch query.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge variant="outline">React Native</Badge>
-                    <Badge variant="outline">Firebase</Badge>
-                    <Badge variant="outline">Redux</Badge>
+                    <Badge variant="outline">DNS</Badge>
+                    <Badge variant="outline">WHOIS</Badge>
+                    <Badge variant="outline">API</Badge>
                   </div>
                   <div className="flex gap-2">
                     <Button size="sm" variant="outline">
@@ -133,29 +137,28 @@ export default function Home() {
                     </Button>
                     <Button size="sm" variant="outline">
                       <ExternalLink className="mr-2 h-4 w-4" />
-                      App Store
+                      Try
                     </Button>
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Project Card 3 */}
+              {/* SSL/TLS Health Monitor */}
               <Card className="flex flex-col">
                 <CardHeader>
                   <div className="flex items-center justify-between">
-                    <CardTitle>Blog Platform</CardTitle>
-                    <Badge variant="secondary">Node.js</Badge>
+                    <CardTitle>SSL/TLS Health Monitor</CardTitle>
+                    <Badge variant="secondary">Python</Badge>
                   </div>
                   <CardDescription>
-                    Platform blog dengan CMS, SEO optimization, dan analytics dashboard
+                    Service untuk memeriksa expiry, chain issues, dan grade SSL dengan notifikasi.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge variant="outline">Node.js</Badge>
-                    <Badge variant="outline">Express</Badge>
-                    <Badge variant="outline">MongoDB</Badge>
-                    <Badge variant="outline">Redis</Badge>
+                    <Badge variant="outline">Cert Check</Badge>
+                    <Badge variant="outline">Alerting</Badge>
+                    <Badge variant="outline">Cron</Badge>
                   </div>
                   <div className="flex gap-2">
                     <Button size="sm" variant="outline">
@@ -164,7 +167,67 @@ export default function Home() {
                     </Button>
                     <Button size="sm" variant="outline">
                       <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
+                      Status
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Uptime & Status Page */}
+              <Card className="flex flex-col">
+                <CardHeader>
+                  <div className="flex items-center justify-between">
+                    <CardTitle>Uptime & Status</CardTitle>
+                    <Badge variant="secondary">Rust / Node</Badge>
+                  </div>
+                  <CardDescription>
+                    Monitor endpoint, latency, dan public status page untuk layanan utilities.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="flex-1">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline">Uptime</Badge>
+                    <Badge variant="outline">Notifications</Badge>
+                    <Badge variant="outline">Status Page</Badge>
+                  </div>
+                  <div className="flex gap-2">
+                    <Button size="sm" variant="outline">
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </Button>
+                    <Button size="sm" variant="outline">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Live Status
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Network & Text Utilities */}
+              <Card className="flex flex-col">
+                <CardHeader>
+                  <div className="flex items-center justify-between">
+                    <CardTitle>Network & Text Tools</CardTitle>
+                    <Badge variant="secondary">Frontend</Badge>
+                  </div>
+                  <CardDescription>
+                    Kumpulan tools ringan: port scanner, traceroute, base64, JSON formatter, dan encoder/decoder.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="flex-1">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline">Port Scan</Badge>
+                    <Badge variant="outline">JSON</Badge>
+                    <Badge variant="outline">Base64</Badge>
+                  </div>
+                  <div className="flex gap-2">
+                    <Button size="sm" variant="outline">
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </Button>
+                    <Button size="sm" variant="outline">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Open Tool
                     </Button>
                   </div>
                 </CardContent>
