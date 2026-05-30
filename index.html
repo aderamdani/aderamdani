@@ -3,86 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ade Ramdani | NOC Engineer</title>
+  <title>Ade Ramdani / NOC Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Martian+Mono:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="page-shell">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Halo, saya</p>
-        <h1>Ade Ramdani</h1>
-        <p class="subtitle">
-          NOC Engineer dengan 5+ tahun pengalaman dalam monitoring jaringan, administrasi infrastruktur,
-          dan keamanan network. Memastikan keandalan layanan kritis dengan respons insiden yang cepat dan proaktif.
+  <div class="grid-overlay" aria-hidden="true">
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+  </div>
+
+  <header class="site-header">
+    <div class="logo">AR / NOC-ENG</div>
+    <div class="status-indicator">
+      <span class="dot"></span>
+      <span class="label">SYSTEMS OPERATIONAL</span>
+    </div>
+  </header>
+
+  <main class="viewport">
+    <section class="hero section-grid">
+      <div class="hero-content">
+        <p class="mono-label">[00 / PROFILE]</p>
+        <h1 class="display-text">Ade Ramdani</h1>
+        <p class="hero-statement">
+          Senior NOC Engineer focusing on high-availability infrastructure and proactive network defense. 
+          Ensuring 99.99% uptime for critical enterprise services through precise monitoring and rapid incident response.
         </p>
-        <div class="actions">
-          <a class="button button-primary" href="#keahlian">Lihat Keahlian</a>
-          <a class="button button-secondary" href="#contact">Kontak</a>
+        <div class="hero-actions">
+          <a href="#expertise" class="btn btn-primary">EXPLORE EXPERTISE</a>
+          <a href="#connect" class="btn btn-outline">ESTABLISH CONTACT</a>
         </div>
       </div>
-      <div class="hero-card">
-        <div class="card-content">
-          <span class="card-label">Profil Singkat</span>
-          <p>
-            Engineer yang berfokus pada keandalan dan stabilitas jaringan. Berpengalaman dalam
-            monitoring 24/7, troubleshooting insiden, dan pengelolaan infrastruktur jaringan skala enterprise.
-          </p>
-          <ul class="stats">
-            <li>
-              <strong>5+</strong>
-              <span>Tahun pengalaman</span>
-            </li>
-            <li>
-              <strong>4</strong>
-              <span>Domain keahlian</span>
-            </li>
-            <li>
-              <strong>24/7</strong>
-              <span>NOC monitoring</span>
-            </li>
+      
+      <div class="hero-stats">
+        <div class="stat-block">
+          <span class="stat-value">05+</span>
+          <span class="stat-label">YEARS EXP</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-value">24/7</span>
+          <span class="stat-label">AVAILABILITY</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-value">99.9</span>
+          <span class="stat-label">UPTIME TARGET</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise" class="expertise section-grid">
+      <div class="section-title">
+        <p class="mono-label">[01 / EXPERTISE]</p>
+        <h2>Core Domains</h2>
+      </div>
+
+      <div class="expertise-matrix">
+        <div class="matrix-item">
+          <div class="item-header">
+            <span class="item-id">NET-MON</span>
+            <h3>Network Monitoring</h3>
+          </div>
+          <p>Real-time telemetry and visualization. Expert in Nagios, Zabbix, and custom Grafana stacks for predictive failure analysis.</p>
+          <ul class="tag-list">
+            <li>SNMP</li>
+            <li>Syslog</li>
+            <li>Flow Analysis</li>
+          </ul>
+        </div>
+
+        <div class="matrix-item">
+          <div class="item-header">
+            <span class="item-id">INF-MGMT</span>
+            <h3>Infrastructure</h3>
+          </div>
+          <p>L2/L3 administration on Cisco and MikroTik ecosystems. Linux server hardening and virtualization management.</p>
+          <ul class="tag-list">
+            <li>BGP/OSPF</li>
+            <li>VLANs</li>
+            <li>Virtualization</li>
+          </ul>
+        </div>
+
+        <div class="matrix-item">
+          <div class="item-header">
+            <span class="item-id">SEC-OPS</span>
+            <h3>Security Operations</h3>
+          </div>
+          <p>Proactive threat mitigation and firewall orchestration. Implementing zero-trust principles at the edge.</p>
+          <ul class="tag-list">
+            <li>Firewalls</li>
+            <li>VPN</li>
+            <li>IDS/IPS</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="keahlian" class="about">
-      <div class="section-header">
-        <p class="section-eyebrow">Keahlian</p>
-        <h2>Area fokus saya</h2>
+    <section id="connect" class="connect section-grid">
+      <div class="connect-header">
+        <p class="mono-label">[02 / CONNECT]</p>
+        <h2>Initiate Discussion</h2>
       </div>
-      <div class="grid">
-        <div class="card">
-          <h3>Network Monitoring</h3>
-          <p>Pemantauan performa jaringan secara real-time menggunakan Nagios, Zabbix, dan Grafana untuk mendeteksi dan mencegah downtime sejak dini.</p>
-        </div>
-        <div class="card">
-          <h3>Infrastruktur Jaringan</h3>
-          <p>Konfigurasi dan manajemen perangkat Cisco dan Mikrotik, serta administrasi server Linux untuk keandalan operasional yang optimal.</p>
-        </div>
-        <div class="card">
-          <h3>Keamanan Jaringan</h3>
-          <p>Implementasi dan manajemen firewall, access control list, serta identifikasi dan mitigasi ancaman jaringan secara proaktif.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="contact-card">
-        <div>
-          <p class="section-eyebrow">Mari terhubung</p>
-          <h2>Hubungi saya</h2>
-          <p>
-            Terbuka untuk diskusi teknis, kolaborasi, atau peluang kerja di bidang jaringan dan infrastruktur IT.
-          </p>
-        </div>
+      <div class="connect-content">
+        <p>Currently open to technical consultations and infrastructure engineering opportunities.</p>
         <div class="contact-links">
-          <a class="button button-primary" href="mailto:mr.aderamdani@gmail.com">Email saya</a>
-          <a class="button button-secondary" href="https://linkedin.com/in/aderamdani" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="button button-secondary" href="https://github.com/aderamdani" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:mr.aderamdani@gmail.com" class="contact-item">
+            <span class="mono">EMAIL</span>
+            <span class="value">mr.aderamdani@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/aderamdani" class="contact-item">
+            <span class="mono">LINKEDIN</span>
+            <span class="value">/in/aderamdani</span>
+          </a>
+          <a href="https://github.com/aderamdani" class="contact-item">
+            <span class="mono">GITHUB</span>
+            <span class="value">/aderamdani</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="copyright">© 2026 ADE RAMDANI. BUILT FOR STABILITY.</div>
+      <div class="timestamp">LOC_TIME: <span id="clock">--:--:--</span></div>
+    </div>
+  </footer>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      document.getElementById('clock').textContent = now.toTimeString().split(' ')[0];
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
 </body>
 </html>
