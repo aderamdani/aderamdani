@@ -1,4 +1,12 @@
 :root {
+  /* HEX Fallbacks for older browsers */
+  --bg-fallback: #10141a;
+  --surface-fallback: #1a1e26;
+  --text-fallback: #ebecf0;
+  --text-muted-fallback: #adb2bd;
+  --accent-fallback: #8ef7c7;
+  --border-fallback: #3b424d;
+
   /* Color Palette - OKLCH */
   --bg: oklch(14% 0.01 250);
   --surface: oklch(18% 0.015 250);
@@ -6,7 +14,6 @@
   --text: oklch(92% 0.01 250);
   --text-muted: oklch(70% 0.01 250);
   --accent: oklch(75% 0.15 160); /* Minty Technical Green */
-  --accent-dim: oklch(30% 0.05 160);
   --border: oklch(30% 0.02 250);
   --border-subtle: oklch(22% 0.01 250);
   
@@ -15,11 +22,22 @@
   --font-mono: 'Martian Mono', 'JetBrains Mono', monospace;
   
   /* Layout */
-  --max-width: 1280px;
-  --gutter: 24px;
-  --column: calc((100% - (11 * var(--gutter))) / 12);
+  --max-width: 1200px;
+  --gutter: clamp(16px, 3vw, 24px);
   
   color-scheme: dark;
+}
+
+@supports not (color: oklch(0% 0 0)) {
+  :root {
+    --bg: var(--bg-fallback);
+    --surface: var(--surface-fallback);
+    --text: var(--text-fallback);
+    --text-muted: var(--text-muted-fallback);
+    --accent: var(--accent-fallback);
+    --border: var(--border-fallback);
+    --border-subtle: #252a33;
+  }
 }
 
 * {
@@ -35,6 +53,7 @@ html {
   font-family: var(--font-main);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 body {
@@ -43,7 +62,7 @@ body {
   flex-direction: column;
 }
 
-/* Grid Overlay (Visual Aid) */
+/* Grid Overlay (Visual Aid - Backgrounded) */
 .grid-overlay {
   position: fixed;
   top: 0;
@@ -57,8 +76,8 @@ body {
   gap: var(--gutter);
   padding: 0 var(--gutter);
   pointer-events: none;
-  z-index: 9999;
-  opacity: 0.03;
+  z-index: -1;
+  opacity: 0.05;
 }
 .grid-overlay div {
   background: var(--accent);
@@ -69,6 +88,7 @@ body {
 .mono-label {
   font-family: var(--font-mono);
   font-size: 0.75rem;
+  font-weight: 500;
   letter-spacing: 0.1em;
   color: var(--accent);
   margin-bottom: 1rem;
@@ -136,11 +156,12 @@ body {
 }
 
 .display-text {
-  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-size: clamp(2.5rem, 10vw, 6rem);
   font-weight: 800;
-  line-height: 0.9;
+  line-height: 0.95;
   letter-spacing: -0.04em;
   margin-bottom: 2rem;
+  word-break: break-word;
 }
 
 .hero-statement {
@@ -152,6 +173,7 @@ body {
 
 .hero-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -189,7 +211,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 24px;
+  gap: 32px;
   border-left: 1px solid var(--border-subtle);
   padding-left: 24px;
 }
@@ -223,7 +245,7 @@ body {
 }
 
 .section-title h2 {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
   letter-spacing: -0.02em;
 }
@@ -237,9 +259,13 @@ body {
   border: 1px solid var(--border-subtle);
 }
 
+/* Fix for odd item count: make the last item span 2 columns if needed, 
+   but for 3 items, we'll make them 1 column on tablet and 2 columns on desktop 
+   with the third one stretching or use a 3-column grid for desktop. */
+
 .matrix-item {
   background: var(--bg);
-  padding: 40px;
+  padding: clamp(24px, 5vw, 40px);
   display: flex;
   flex-direction: column;
   transition: background 0.3s ease;
@@ -270,6 +296,7 @@ body {
   color: var(--text-muted);
   margin-bottom: 2rem;
   flex-grow: 1;
+  font-size: 0.95rem;
 }
 
 .tag-list {
@@ -298,7 +325,7 @@ body {
 }
 
 .connect-header h2 {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
 }
 
@@ -307,7 +334,7 @@ body {
 }
 
 .connect-content p {
-  font-size: 1.5rem;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
   margin-bottom: 3rem;
 }
 
@@ -340,7 +367,7 @@ body {
 }
 
 .contact-item .value {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Footer */
@@ -356,23 +383,43 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   font-family: var(--font-mono);
   font-size: 0.65rem;
   color: var(--text-muted);
 }
 
 /* Responsive */
+@media (min-width: 1025px) {
+  .expertise-matrix {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 1024px) {
-  .hero-content { grid-column: 1 / 10; }
-  .hero-stats { grid-column: 1 / 13; flex-direction: row; border-left: none; border-top: 1px solid var(--border-subtle); padding-left: 0; padding-top: 24px; }
+  .hero-content { grid-column: 1 / 13; }
+  .hero-stats { 
+    grid-column: 1 / 13; 
+    flex-direction: row; 
+    border-left: none; 
+    border-top: 1px solid var(--border-subtle); 
+    padding-left: 0; 
+    padding-top: 24px; 
+    justify-content: space-between;
+  }
   .expertise-matrix { grid-template-columns: 1fr; }
+  .section-title, .connect-header { grid-column: 1 / 13; margin-bottom: 2rem; }
+  .expertise-matrix, .connect-content { grid-column: 1 / 13; }
 }
 
 @media (max-width: 768px) {
-  .section-grid { padding: 40px var(--gutter); }
-  .section-title, .connect-header { grid-column: 1 / 13; margin-bottom: 2rem; }
-  .expertise-matrix, .connect-content { grid-column: 1 / 13; }
+  .section-grid { 
+    grid-template-columns: 1fr;
+    padding: 60px var(--gutter); 
+  }
   .display-text { font-size: 3rem; }
+  .hero-stats { flex-direction: column; gap: 24px; }
   .contact-item { flex-direction: column; gap: 8px; }
   .contact-item .value { font-size: 0.875rem; }
+  .grid-overlay { grid-template-columns: repeat(6, 1fr); }
 }
