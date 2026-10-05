@@ -4,8 +4,6 @@ NOC Engineer · Jakarta, Indonesia
 
 `[ STATUS: SYSTEMS OPERATIONAL ]`
 
-[LinkedIn](https://linkedin.com/in/aderamdani) · [Email](mailto:mr.aderamdani@gmail.com) · [GitHub](https://github.com/aderamdani)
-
 <details open>
 <summary><b>English</b></summary>
 
