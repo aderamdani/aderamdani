@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:8ef7c7&height=200&section=header&text=Ade%20Ramdani&fontSize=52&fontColor=ebecf0&fontAlignY=36&desc=Senior%20NOC%20Engineer%20%C2%B7%20Jakarta%2C%20Indonesia&descAlignY=56&descSize=18&animation=fadeIn" width="100%" alt="Ade Ramdani — Senior NOC Engineer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:8ef7c7&height=200&section=header&text=Ade%20Ramdani&fontSize=52&fontColor=ebecf0&fontAlignY=36&desc=NOC%20Engineer%20%C2%B7%20Jakarta%2C%20Indonesia&descAlignY=56&descSize=18&animation=fadeIn" width="100%" alt="Ade Ramdani — NOC Engineer" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&pause=1200&color=8EF7C7&center=true&vCenter=true&width=680&lines=Senior+NOC+Engineer+%E2%80%94+high-availability+infrastructure;Monitoring+%26+observability%3A+Zabbix%2C+Grafana%2C+Nagios;Networking%3A+MikroTik%2C+Cisco%2C+BGP%2FOSPF%2C+VLAN%2FVXLAN;Security+ops%3A+firewalls%2C+IPsec%2FWireGuard%2C+IDS%2FIPS;Building+network+tooling+for+macOS" alt="Senior NOC Engineer — high-availability infrastructure" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&pause=1200&color=8EF7C7&center=true&vCenter=true&width=700&lines=NOC+Engineer+%E2%80%94+keeping+the+network+up+24%2F7;Monitoring+%26+telemetry%3A+Zabbix%2C+Grafana%2C+Nagios%2C+SNMP;Routing+%26+switching%3A+MikroTik%2C+Ruijie%2C+BGP%2FOSPF%2C+VLAN%2FVXLAN;Security+ops%3A+firewalls%2C+IPsec%2FWireGuard%2C+IDS%2FIPS;Incident+response+%C2%B7+capacity+planning+%C2%B7+99.9%25+uptime" alt="NOC Engineer — keeping the network up 24/7" />
 
 <br /><br />
 
@@ -12,15 +12,26 @@
 <br />
 <img src="https://komarev.com/ghpvc/?username=aderamdani&style=for-the-badge&color=8ef7c7&labelColor=0d1117&label=profile+views" alt="Profile views" />
 
+<br />
+<code>[ STATUS: SYSTEMS OPERATIONAL ]</code>
+
 </div>
 
-## Tentang / About
+## [01 / Tentang · About]
 
-**ID** — Saya **Ade Ramdani**, Senior NOC Engineer di Jakarta. Keseharian saya menjaga ketersediaan infrastruktur kritikal: memantau jaringan secara real-time, menegakkan postur keamanan, dan merespons insiden dengan cepat. Di luar jam kerja saya membangun alat kecil untuk macOS dan dashboard operasional yang mempermudah kerja NOC.
+**ID** — Saya **Ade Ramdani**, NOC Engineer di Jakarta. Tugas saya menjaga jaringan tetap hidup: memantau trafik dan perangkat secara real-time, menangani insiden sebelum menjadi gangguan, dan memastikan layanan kritikal tetap tersedia. Saya bekerja di lapisan routing, switching, dan keamanan jaringan — MikroTik, Ruijie, firewall, dan tunnel VPN — serta membangun alat kecil untuk macOS dan dashboard operasional yang mempermudah kerja NOC.
 
-**EN** — I'm **Ade Ramdani**, a Senior NOC Engineer based in Jakarta. I keep critical infrastructure available: real-time network monitoring, a defensive security posture, and fast incident response. Off the clock I build small macOS tools and operations dashboards that make NOC work easier.
+**EN** — I'm **Ade Ramdani**, a NOC Engineer based in Jakarta. My job is keeping the network alive: real-time monitoring of traffic and devices, handling incidents before they become outages, and keeping critical services available. I work across routing, switching, and network security — MikroTik, Ruijie, firewalls, and VPN tunnels — and I build small macOS tools and operations dashboards that make NOC work easier.
 
-## Proyek Pilihan / Featured Projects
+## [02 / Fokus Operasional · Operational Focus]
+
+| Domain | Focus |
+|:--|:--|
+| **Monitoring & Telemetry** | Zabbix · Grafana · Nagios · SNMP/MTR — visibilitas real-time dan deteksi anomali / *real-time visibility and anomaly detection* |
+| **Network Infrastructure** | MikroTik · Ruijie · L2/L3 · BGP/OSPF · VLAN/VXLAN — routing, switching, dan hardening Linux / *routing, switching, and Linux hardening* |
+| **Security Operations** | Stateful firewall · IPsec/WireGuard · IDS/IPS — postur defensif yang proaktif / *a proactive defensive posture* |
+
+## [03 / Proyek · Projects]
 
 <div align="center">
 
@@ -31,7 +42,7 @@
 
 </div>
 
-## Stack & Domain
+## [04 / Stack & Domain]
 
 <div align="center">
 
@@ -39,7 +50,7 @@
 
 <br /><br />
 
-<img src="https://img.shields.io/badge/Networking-MikroTik%20%C2%B7%20Cisco%20%C2%B7%20BGP%2FOSPF%20%C2%B7%20VLAN%2FVXLAN-0d1117?style=for-the-badge&labelColor=8ef7c7" alt="Networking" />
+<img src="https://img.shields.io/badge/Networking-MikroTik%20%C2%B7%20Ruijie%20%C2%B7%20BGP%2FOSPF%20%C2%B7%20VLAN%2FVXLAN-0d1117?style=for-the-badge&labelColor=8ef7c7" alt="Networking" />
 <br />
 <img src="https://img.shields.io/badge/Monitoring-Zabbix%20%C2%B7%20Grafana%20%C2%B7%20Nagios%20%C2%B7%20SNMP-0d1117?style=for-the-badge&labelColor=8ef7c7" alt="Monitoring" />
 <br />
@@ -49,7 +60,7 @@
 
 </div>
 
-## Aktivitas / Activity
+## [05 / Aktivitas · Activity]
 
 <div align="center">
 
@@ -62,7 +73,7 @@
 
 </div>
 
-## Kontak / Connect
+## [06 / Kontak · Connect]
 
 <div align="center">
 
